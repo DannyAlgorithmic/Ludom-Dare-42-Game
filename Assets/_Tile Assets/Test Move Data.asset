@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5139f1c97ff29c458a1fdf24324253c, type: 3}
+  m_Name: Test Move Data
+  m_EditorClassIdentifier: 
+  type: 0
+  filter: 0
+  sprite: {fileID: 21300000, guid: 460e683f02551314d8a377ac53dcc081, type: 3}
+  MoveAction: {fileID: 11400000, guid: f21204b3b4f2f3d4986b0440f1ef3178, type: 2}

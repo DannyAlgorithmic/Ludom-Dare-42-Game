@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfcb3de7673bae0488355ec638cbda19, type: 3}
+  m_Name: Player Two
+  m_EditorClassIdentifier: Assembly-CSharp::Neutral
+  type: 5
+  filter: 1
+  sprite: {fileID: 21300000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Tile Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ab47598261b6de14381432bc569a9a03, type: 3}
+    - {fileID: 2800000, guid: 0a9d226deccce184b949b0ff55b5c07d, type: 3}
+    - {fileID: 2800000, guid: 656030f4172231040b83457f56351e0c, type: 3}
+    - {fileID: 2800000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
+    - {fileID: 2800000, guid: 6e013695edfe89840bdd62fd44708125, type: 3}
+    - {fileID: 2800000, guid: 9f1e6f38bac47be478e7e6ae122e10a7, type: 3}
+    - {fileID: 2800000, guid: 021da4be20e5a1d4eac4cd8f0a83e250, type: 3}
+    - {fileID: 2800000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}
+  - {fileID: 21300000, guid: ab47598261b6de14381432bc569a9a03, type: 3}
+  - {fileID: 21300000, guid: 656030f4172231040b83457f56351e0c, type: 3}
+  - {fileID: 21300000, guid: 6e013695edfe89840bdd62fd44708125, type: 3}
+  - {fileID: 21300000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
+  - {fileID: 21300000, guid: 9f1e6f38bac47be478e7e6ae122e10a7, type: 3}
+  - {fileID: 21300000, guid: 0a9d226deccce184b949b0ff55b5c07d, type: 3}
+  - {fileID: 21300000, guid: 021da4be20e5a1d4eac4cd8f0a83e250, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Player Two Background
+  - Block Both Tile
+  - Heart Tile
+  - Player One
+  - Neutral Tile
+  - Player One Background
+  - Grid Background
+  - Player Two
+  m_Tag: Tile Sprite Atlas
+  m_IsVariant: 0
