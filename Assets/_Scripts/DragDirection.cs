@@ -2,13 +2,13 @@
 
 public class DragDirection : MonoBehaviour {
 
-    private Camera cam;
-    private Vector2 start, current, end;
-    private Vector2Int dir;
-    private float dist = 0;
+    private static Camera cam;
+    public static Vector2 start, current, end;
+    public static Vector2Int dir;
+    public static float dist = 0;
 
     // For Testing Purposes
-    private LineRenderer lr;
+    private static LineRenderer lr;
 
     private void Awake()
     {
@@ -16,10 +16,8 @@ public class DragDirection : MonoBehaviour {
         lr = GetComponent<LineRenderer>();
     }
 
-    void Update () {
-
-        UpdateRealtimeVectors();
-
+    public static void UpdateLine()
+    {
         if (Input.GetMouseButtonDown(0))
         {
             lr.enabled = true;
@@ -31,7 +29,7 @@ public class DragDirection : MonoBehaviour {
 
         if (Input.GetMouseButton(0))
         {
-            lr.SetPosition(1, start + (new Vector2(dir.x, dir.y) * dist) );
+            lr.SetPosition(1, start + (new Vector2(dir.x, dir.y) * dist));
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -39,10 +37,40 @@ public class DragDirection : MonoBehaviour {
             lr.positionCount = 0;
             lr.enabled = false;
         }
+    } 
 
+    public static void ResetLine()
+    {
+        lr.enabled = false;
+        lr.positionCount = 0;
     }
 
-    private void UpdateRealtimeVectors()
+    public static void UpdateData(Vector2 _pos)
+    {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            start = _pos;
+            dist = 0;
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            current = cam.ScreenToWorldPoint(Input.mousePosition);
+            dist = (current - start).magnitude;
+            dir = CalculateDirection(start, current);
+            // Debug.Log("Direction: " + dir + "Distance: " + dist);
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            end = current;
+            dist = (current - start).magnitude;
+            dir = CalculateDirection(start, current);
+        }
+    }
+
+    public static void UpdateData()
     {
 
         if (Input.GetMouseButtonDown(0))
@@ -67,7 +95,7 @@ public class DragDirection : MonoBehaviour {
         }
     }
 
-    private Vector2Int CalculateDirection(Vector2 start, Vector2 current)
+    private static Vector2Int CalculateDirection(Vector2 start, Vector2 current)
     {
         Vector2 heading = (current - start).normalized;
         int x = Mathf.RoundToInt(heading.x), y = Mathf.RoundToInt(heading.y);

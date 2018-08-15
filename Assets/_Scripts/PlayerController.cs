@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -14,6 +13,8 @@ public class PlayerController : MonoBehaviour {
     public Transform selfTrans;
 
     public BaseAction StartingAction;
+    public MovementAction MoveAction;
+    public SwapOccupiedTileAction TileSwapAction;
 
     private Queue<BaseAction> actionQueue;
     
@@ -23,10 +24,27 @@ public class PlayerController : MonoBehaviour {
         selfTrans = transform;
         actionQueue = new Queue<BaseAction>();
 
-        UpdateIndices();
+        UpdateIndices(StartIndice);
+        
+    }
+
+    private void Start()
+    {
         StartingAction.TakeAction(this);
     }
 
+    private void Update()
+    {
+        DragDirection.UpdateData();
+
+        if (Input.GetMouseButtonUp(0) && Vector2.Distance(selfTrans.position, DragDirection.start ) <= 0.6f )
+        {
+            MoveAction.Direction = DragDirection.dir;
+            MoveAction.TakeAction(this);
+            TileSwapAction.TakeAction(this);
+            // SwapAction.TakeAction(this);
+        }
+    }
 
     public void AddActions(BaseAction[] _actions)
     {
@@ -46,12 +64,14 @@ public class PlayerController : MonoBehaviour {
         {
             actionQueue.Dequeue().TakeAction(this);
         }
+
+        actionQueue.Clear();
     }
 
-    public void UpdateIndices()
+    public void UpdateIndices(Vector2Int _indice)
     {
-        currentIndice = StartIndice;
         prevIndice = currentIndice;
+        currentIndice = _indice;
     }
 
 }

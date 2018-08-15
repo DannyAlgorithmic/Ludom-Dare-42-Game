@@ -55,3 +55,5 @@ MonoBehaviour:
   TilePrefab: {fileID: 114225936111346562, guid: 5a43380f98cc5394aab66351ba5d9eb3,
     type: 2}
   DefaultData: {fileID: 11400000, guid: 4479ea47c0e4b1e46b52bd15512e8681, type: 2}
+  PointData: {fileID: 11400000, guid: 9dab4022cec491345bae429f9722c5f9, type: 2}
+  HealthData: {fileID: 11400000, guid: 5e505e7d7e0270040a2525ef2078eb7b, type: 2}

@@ -16,6 +16,7 @@ public class TurnTimer : MonoBehaviour {
     {
         p1 = GameObject.Find("Player One").GetComponent<PlayerController>();
         p2 = GameObject.Find("Player Two").GetComponent<PlayerController>();
+        // p2.enabled = false;
         // Debug.Log(p2.name);
     }
 

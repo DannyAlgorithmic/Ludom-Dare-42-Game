@@ -26,7 +26,7 @@ public class TestSwitch : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.Space) && GlobalMap.Map != null && tile != null)
         {
             tile.ResetTile();
-            tile = null;
+            // tile = null;
         }
     }
 }

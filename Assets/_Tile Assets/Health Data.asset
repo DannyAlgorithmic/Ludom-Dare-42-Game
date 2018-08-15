@@ -9,11 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1694c019afc5377459285cf06b170ac6, type: 3}
-  m_Name: Neutral Data
+  m_Name: Health Data
   m_EditorClassIdentifier: 
-  type: 0
-  filter: 0
-  sprite: {fileID: 21300000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
-  ActionList:
-  - {fileID: 11400000, guid: e3243a8d93fa63f4695f8ca1c7afaedc, type: 2}
-  - {fileID: 11400000, guid: 18791de69b42eb84a8dfae2ac80ad043, type: 2}
+  type: 2
+  filter: 3
+  sprite: {fileID: 21300000, guid: 656030f4172231040b83457f56351e0c, type: 3}
+  ActionList: []

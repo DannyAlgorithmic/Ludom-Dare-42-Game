@@ -51,5 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98736aa314925394f9a01e49b299c397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReplaceData: {fileID: 11400000, guid: 4479ea47c0e4b1e46b52bd15512e8681, type: 2}
+  ReplaceData: {fileID: 11400000, guid: 7f26f216e99c05e489209f47f510c170, type: 2}
   SwitchIndice: {x: 1, y: 3}

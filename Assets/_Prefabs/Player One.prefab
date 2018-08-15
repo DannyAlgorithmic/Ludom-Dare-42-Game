@@ -58,6 +58,8 @@ MonoBehaviour:
   prevIndice: {x: 0, y: 0}
   selfTrans: {fileID: 0}
   StartingAction: {fileID: 11400000, guid: 9715db87102ae964d8c8c1a827cdc35c, type: 2}
+  MoveAction: {fileID: 11400000, guid: eefdb0181509a9946b90bfcbd7e2e6ef, type: 2}
+  TileSwapAction: {fileID: 11400000, guid: e3243a8d93fa63f4695f8ca1c7afaedc, type: 2}
 --- !u!212 &212870632840667516
 SpriteRenderer:
   m_ObjectHideFlags: 1

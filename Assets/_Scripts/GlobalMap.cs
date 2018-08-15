@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
-[CreateAssetMenu (menuName = "Map")]
+[CreateAssetMenu(menuName = "Map")]
 public class GlobalMap : ScriptableObject {
+
+    public static TileData PointData { set; get; }
+    public static TileData HealthData { set; get; }
 
     public static Tile[,] Map {set; get;}
     public static Vector2Int MapBounds { set; get; }
@@ -87,9 +88,9 @@ public class GlobalMap : ScriptableObject {
         return Map[_indice.x, _indice.y] != null;
     }
 
-    public static void SetPointTile(TileData _pointData)
+    public static void SetPointTile()
     {
-        int x = Random.Range(0, MapBounds.x), y = Random.Range(0, MapBounds.y); ;
+        int x = Random.Range(1, MapBounds.x-1), y = MapBounds.y-1;
         Vector2Int randIndice = new Vector2Int(x, y);
 
         Tile tile = GetTile(randIndice);
@@ -97,13 +98,25 @@ public class GlobalMap : ScriptableObject {
 
         if (empySpace == true)
         {
-            tile.RefreshData(_pointData);
+            tile.RefreshData(PointData);
             tile.UpdateTile();
         }
         else
         {
-            SetPointTile(_pointData);
+            SetPointTile();
         }
+    }
+
+    public static void SetTileData(Vector2Int _indice, TileData _tileData)
+    {
+        Tile tile = GetTile(_indice);
+        tile.RefreshData(_tileData);
+        tile.UpdateTile();
+    }
+
+    public static void ResetTile(Vector2Int _indice)
+    {
+        GetTile(_indice).ResetTile();
     }
 
 }
