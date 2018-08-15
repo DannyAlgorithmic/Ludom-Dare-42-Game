@@ -12,18 +12,14 @@ public class Tile : MonoBehaviour {
 
     // Generic Object Data
     private SpriteRenderer sr;
-    // private Transform tileTrans;
 
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-       // tileTrans = transform;
     }
 
     private void OnEnable()
-    {
-        ResetTile();
-    }
+    { ResetTile(); }
 
     public void ResetTile()
     {
@@ -32,18 +28,12 @@ public class Tile : MonoBehaviour {
     }
 
     public void RefreshData(TileData _data)
-    {
-        Data = _data;
-    }
+    { Data = _data; }
 
     public void UpdateTile()
     {
         if (Data != null)
-        {
-            sr.sprite = Data.sprite;
-        }
-
-        // Debug.Log("Tile Type: " + Data.type);
+        { sr.sprite = Data.sprite; }
     }
 
 }

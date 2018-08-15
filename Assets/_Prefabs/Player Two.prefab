@@ -52,10 +52,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4ccb79118a3af468096cc0fd6816d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 3
-  PlayerTileData: {fileID: 11400000, guid: 6cfbc24a7212b3a42b8cea6a63c64740, type: 2}
-  StarData: {fileID: 11400000, guid: 0c7f9ef0e53431240a392a61cc0321a6, type: 2}
   StartIndice: {x: 3, y: 0}
+  currentIndice: {x: 0, y: 0}
+  prevIndice: {x: 0, y: 0}
+  selfTrans: {fileID: 0}
+  StartingAction: {fileID: 11400000, guid: 9715db87102ae964d8c8c1a827cdc35c, type: 2}
 --- !u!212 &212557448888119472
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -8,9 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcb3de7673bae0488355ec638cbda19, type: 3}
-  m_Name: Player Two
-  m_EditorClassIdentifier: Assembly-CSharp::Neutral
+  m_Script: {fileID: 11500000, guid: 1694c019afc5377459285cf06b170ac6, type: 3}
+  m_Name: Player One Data
+  m_EditorClassIdentifier: 
   type: 5
-  filter: 1
-  sprite: {fileID: 21300000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}
+  filter: 0
+  sprite: {fileID: 21300000, guid: 9f1e6f38bac47be478e7e6ae122e10a7, type: 3}
+  ActionList: []

@@ -7,19 +7,11 @@ public class MovementAction : BaseAction {
     public Vector2Int Direction;
     public override void TakeAction(PlayerController ctrl)
     {
-        Tile tile = GlobalMap.GetTile(ctrl.currentIndice + Direction);
+        Tile tile = GlobalMap.GetTile( (ctrl.currentIndice + Direction) );
 
-        ctrl.prevIndice = ctrl.currentIndice;
-        ctrl.currentIndice = tile.Indice;
+        if (GlobalMap.Map != null && tile != null && tile.Data.type == TileType.NEUTRAL || tile.Data.type == TileType.POINT)
+        { ctrl.selfTrans.position = tile.Position; }
 
-        ctrl.selfTrans.position = tile.Position;
-
-        tile.RefreshData(ctrl.PlayerTileData);
-        tile.UpdateTile();
-
-        GlobalMap.GetTile(ctrl.prevIndice).ResetTile();
-        TurnTimer.SwitchPlayers(ctrl.PlayerTileData.filter);
-
-        Debug.Log("Move Tile move " +ctrl.name + " to indice: " + ( tile.Indice ) );
+        Debug.Log( "Move Tile" );
     }
 }

@@ -54,4 +54,4 @@ MonoBehaviour:
   MapSize: {x: 4, y: 7}
   TilePrefab: {fileID: 114225936111346562, guid: 5a43380f98cc5394aab66351ba5d9eb3,
     type: 2}
-  DefaultData: {fileID: 11400000, guid: 4c32439b63926374dbfd2fc9c249e8b8, type: 2}
+  DefaultData: {fileID: 11400000, guid: 4479ea47c0e4b1e46b52bd15512e8681, type: 2}

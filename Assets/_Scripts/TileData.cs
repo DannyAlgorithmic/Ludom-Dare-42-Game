@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class TileData : ScriptableObject{
+[CreateAssetMenu (menuName = "TileData")]
+public class TileData : ScriptableObject{
+
     public TileType type;
     public PlayerFilter filter;
     public Sprite sprite;
+    public BaseAction[] ActionList;
 
-    public abstract void Act(PlayerController ctrl);
+    public void FetchActions(PlayerController ctrl)
+    {
+        if (ActionList != null && ActionList.Length > 0)
+        {
+            ctrl.AddActions(ActionList);
+        }
+    }
+
 }
 
 

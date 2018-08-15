@@ -8,6 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a313c981656ff384a90d6a3e7bf8612e, type: 3}
-  m_Name: Global Map
+  m_Script: {fileID: 11500000, guid: a8d883311e625f749985c3b4c92f478d, type: 3}
+  m_Name: Move To Start
   m_EditorClassIdentifier: 
+  Direction: {x: 0, y: 0}
