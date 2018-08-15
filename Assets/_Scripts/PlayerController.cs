@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public TileData PlayerTileData;
+
     public Vector2Int StartIndice;
     [HideInInspector]
     public Vector2Int currentIndice = Vector2Int.zero,

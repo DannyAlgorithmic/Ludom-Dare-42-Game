@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4ccb79118a3af468096cc0fd6816d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerTileData: {fileID: 11400000, guid: d2315ef30ad440542817784fc8ef8c36, type: 2}
   StartIndice: {x: 0, y: 0}
   currentIndice: {x: 0, y: 0}
   prevIndice: {x: 0, y: 0}
