@@ -14,7 +14,7 @@ public class MovementAction : BaseAction {
             if ( type == TileType.NEUTRAL || type == TileType.POINT || type == TileType.MOVE || type == TileType.HEALTH)
             {
                 JumpToTile(_ctrl, tile);
-                Debug.Log("Tried to move to type: " + type);
+                // Debug.Log("Tried to move to type: " + type);
             }
             else if ( type == TileType.PLAYER && DirectionalityCheck.Check(Direction) == Directionality.Diagonal && GlobalMap.IsEdge(tile.Indice) == false)
             {
@@ -25,13 +25,15 @@ public class MovementAction : BaseAction {
                 if (type == TileType.NEUTRAL || type == TileType.POINT || type == TileType.MOVE || type == TileType.HEALTH)
                 { JumpToTile(_ctrl, tile); }
                 else if ( type == TileType.BLOCKING && filter == PlayerFilter.BOTH )
-                { Debug.Log("Blocked"); }
+                {
+                    // Debug.Log("Blocked");
+                }
                 else
                 {
                     if (filter != _ctrl.PlayerTileData.filter)
                     {
                         JumpToTile(_ctrl, tile);
-                        Debug.Log("Tried to jump player of type: " + type + " moving: " + DirectionalityCheck.Check(Direction));
+                        // Debug.Log("Tried to jump player of type: " + type + " moving: " + DirectionalityCheck.Check(Direction));
                     }
                     
                 }
