@@ -14,4 +14,5 @@ MonoBehaviour:
   type: 2
   filter: 3
   sprite: {fileID: 21300000, guid: 656030f4172231040b83457f56351e0c, type: 3}
-  ActionList: []
+  ActionList:
+  - {fileID: 11400000, guid: 18791de69b42eb84a8dfae2ac80ad043, type: 2}

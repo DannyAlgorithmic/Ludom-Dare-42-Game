@@ -7,6 +7,8 @@ public class TurnTimer : MonoBehaviour {
     // public PlayerController PlayerOne, PlayerTwo;
     public static PlayerController p1, p2;
 
+    public static PlayerController CurrentPlayer { set; get; }
+
     private void Awake()
     {
         // DontDestroyOnLoad(gameObject);
@@ -26,11 +28,15 @@ public class TurnTimer : MonoBehaviour {
         {
             p2.enabled = true;
             p1.enabled = false;
+
+            CurrentPlayer = p2;
         }
         else
         {
             p1.enabled = true;
             p2.enabled = false;
+
+            CurrentPlayer = p1;
         }
     }
 }

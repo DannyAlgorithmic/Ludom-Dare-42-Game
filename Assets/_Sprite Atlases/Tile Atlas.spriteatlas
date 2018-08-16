@@ -5,12 +5,12 @@ SpriteAtlas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Tile Sprite Atlas
+  m_Name: Tile Atlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
       serializedVersion: 2
-      anisoLevel: 0
+      anisoLevel: 1
       compressionQuality: 50
       maxTextureSize: 2048
       textureCompression: 0
@@ -19,43 +19,75 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
     packingSettings:
       serializedVersion: 2
-      padding: 2
+      padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 0
       enableTightPacking: 0
     variantMultiplier: 1
     packables:
+    - {fileID: 2800000, guid: e38530be7fe014641b6c3d571724d6a3, type: 3}
+    - {fileID: 2800000, guid: 7b893a464080ceb4ab6a4fc61693aab5, type: 3}
+    - {fileID: 2800000, guid: a224b0bc3aeb60946826a3b9301c3184, type: 3}
+    - {fileID: 2800000, guid: ea1080e9b28058f4bb70be12dc862ba4, type: 3}
     - {fileID: 2800000, guid: ab47598261b6de14381432bc569a9a03, type: 3}
     - {fileID: 2800000, guid: 0a9d226deccce184b949b0ff55b5c07d, type: 3}
     - {fileID: 2800000, guid: 656030f4172231040b83457f56351e0c, type: 3}
+    - {fileID: 2800000, guid: 460e683f02551314d8a377ac53dcc081, type: 3}
     - {fileID: 2800000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
     - {fileID: 2800000, guid: 6e013695edfe89840bdd62fd44708125, type: 3}
     - {fileID: 2800000, guid: 9f1e6f38bac47be478e7e6ae122e10a7, type: 3}
     - {fileID: 2800000, guid: 021da4be20e5a1d4eac4cd8f0a83e250, type: 3}
     - {fileID: 2800000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}
+    - {fileID: 2800000, guid: 22442966ff708994798d0f4296a7ba8f, type: 3}
+    - {fileID: 2800000, guid: 53ad5d30933e5d24c8b1af691cd7d623, type: 3}
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 53ad5d30933e5d24c8b1af691cd7d623, type: 3}
   - {fileID: 21300000, guid: 36e03b51c11c2c445800d62f2e93a4be, type: 3}
   - {fileID: 21300000, guid: ab47598261b6de14381432bc569a9a03, type: 3}
   - {fileID: 21300000, guid: 656030f4172231040b83457f56351e0c, type: 3}
   - {fileID: 21300000, guid: 6e013695edfe89840bdd62fd44708125, type: 3}
+  - {fileID: 21300000, guid: 7b893a464080ceb4ab6a4fc61693aab5, type: 3}
   - {fileID: 21300000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
+  - {fileID: 21300000, guid: 22442966ff708994798d0f4296a7ba8f, type: 3}
   - {fileID: 21300000, guid: 9f1e6f38bac47be478e7e6ae122e10a7, type: 3}
+  - {fileID: 21300000, guid: ea1080e9b28058f4bb70be12dc862ba4, type: 3}
+  - {fileID: 21300000, guid: a224b0bc3aeb60946826a3b9301c3184, type: 3}
   - {fileID: 21300000, guid: 0a9d226deccce184b949b0ff55b5c07d, type: 3}
+  - {fileID: 21300000, guid: e38530be7fe014641b6c3d571724d6a3, type: 3}
   - {fileID: 21300000, guid: 021da4be20e5a1d4eac4cd8f0a83e250, type: 3}
+  - {fileID: 21300000, guid: 460e683f02551314d8a377ac53dcc081, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Tile Divider
   - Player Two Background
   - Block Both Tile
   - Heart Tile
   - Player One
+  - Hexagon
   - Neutral Tile
+  - Point Tile
   - Player One Background
+  - Triangle
+  - Square
   - Grid Background
+  - Circle
   - Player Two
-  m_Tag: Tile Sprite Atlas
+  - Move Up Tile
+  m_Tag: Tile Atlas
   m_IsVariant: 0

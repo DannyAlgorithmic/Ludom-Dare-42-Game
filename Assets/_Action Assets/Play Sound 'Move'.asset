@@ -8,11 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1694c019afc5377459285cf06b170ac6, type: 3}
-  m_Name: Block Both Data
+  m_Script: {fileID: 11500000, guid: 4263705d0c572cd4d8d1cc4f10e8ad43, type: 3}
+  m_Name: Play Sound 'Move'
   m_EditorClassIdentifier: 
-  Cost: 1
-  type: 1
-  filter: 2
-  sprite: {fileID: 21300000, guid: ab47598261b6de14381432bc569a9a03, type: 3}
-  ActionList: []
+  clip: {fileID: 8300000, guid: d65555381d4d50f4e82e7beba71a9665, type: 3}
