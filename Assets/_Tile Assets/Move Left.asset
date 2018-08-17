@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1694c019afc5377459285cf06b170ac6, type: 3}
-  m_Name: Neutral Data
+  m_Name: Move Left
   m_EditorClassIdentifier: 
-  Cost: 0
-  type: 0
-  filter: 0
-  sprite: {fileID: 21300000, guid: aa39ac468332cb74daae72c692ad432c, type: 3}
+  Cost: 2
+  type: 4
+  filter: 3
+  sprite: {fileID: 21300000, guid: 1af8180bcc88edb4c856c7ad9e8ac5ed, type: 3}
   ActionList:
   - {fileID: 11400000, guid: e3243a8d93fa63f4695f8ca1c7afaedc, type: 2}
-  - {fileID: 11400000, guid: 18791de69b42eb84a8dfae2ac80ad043, type: 2}
+  - {fileID: 11400000, guid: 8c66e585085f405489e0fd90eb59af42, type: 2}

@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1694c019afc5377459285cf06b170ac6, type: 3}
-  m_Name: Move Up Data
+  m_Name: Move Bottom Left
   m_EditorClassIdentifier: 
   Cost: 2
   type: 4
   filter: 3
-  sprite: {fileID: 21300000, guid: 460e683f02551314d8a377ac53dcc081, type: 3}
+  sprite: {fileID: 21300000, guid: 224fc38f55fa7f14eb3e298fef57b6f0, type: 3}
   ActionList:
   - {fileID: 11400000, guid: e3243a8d93fa63f4695f8ca1c7afaedc, type: 2}
-  - {fileID: 11400000, guid: f21204b3b4f2f3d4986b0440f1ef3178, type: 2}
+  - {fileID: 11400000, guid: 0bbf31e6348338b47a0db0a859d80b9b, type: 2}
